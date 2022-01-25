@@ -3,10 +3,10 @@
 function Footer() {
     return (
         <footer>
-            <ul>
-                <li>GitHub</li>
-                <li>LinkedIn</li>
-                <li>StackOverflow</li>
+            <ul className='d-flex list-group-horizontal justify-content-center'>
+                <li className={'m-1 list-group-item'}>GitHub</li>
+                <li className={'m-1 list-group-item'}>LinkedIn</li>
+                <li className={'m-1 list-group-item'}>StackOverflow</li>
             </ul>
         </footer>
     );

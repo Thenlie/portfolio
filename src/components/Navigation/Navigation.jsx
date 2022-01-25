@@ -2,11 +2,11 @@
 
 function Navigation() {
     return (
-        <ul>
-            <li>About Me</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
-            <li>Resume</li>
+        <ul className='d-flex list-group-horizontal'>
+            <li className={'m-1 list-group-item'}>About Me</li>
+            <li className={'m-1 list-group-item'}>Portfolio</li>
+            <li className={'m-1 list-group-item'}>Contact</li>
+            <li className={'m-1 list-group-item'}>Resume</li>
         </ul>
     );
 }

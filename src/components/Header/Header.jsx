@@ -3,7 +3,7 @@ import Navigation from '../Navigation';
 
 function Header() {
     return (
-        <header>
+        <header className='d-flex justify-content-between'>
             <h1>Leithen</h1>
             <Navigation />
         </header>
