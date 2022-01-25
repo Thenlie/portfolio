@@ -1,12 +1,14 @@
 // import React from 'react';
 
-function Navigation() {
+function Navigation(props) {
+    const {currentCategory, setCurrentCategory} = props;
+    console.log(currentCategory)
     return (
         <ul className='d-flex list-group-horizontal'>
-            <li className={'m-1 list-group-item'}>About Me</li>
-            <li className={'m-1 list-group-item'}>Portfolio</li>
-            <li className={'m-1 list-group-item'}>Contact</li>
-            <li className={'m-1 list-group-item'}>Resume</li>
+            <li className={`m-1 list-group-item ${currentCategory === 'about' && 'text-warning'}`} onClick={() => setCurrentCategory('about')}>About Me</li>
+            <li className={`m-1 list-group-item ${currentCategory === 'portfolio' && 'text-warning'}`} onClick={() => setCurrentCategory('portfolio')}>Portfolio</li>
+            <li className={`m-1 list-group-item ${currentCategory === 'contact' && 'text-warning'}`} onClick={() => setCurrentCategory('contact')}>Contact</li>
+            <li className={`m-1 list-group-item ${currentCategory === 'resume' && 'text-warning'}`} onClick={() => setCurrentCategory('resume')}>Resume</li>
         </ul>
     );
 }
