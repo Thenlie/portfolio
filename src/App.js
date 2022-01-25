@@ -9,12 +9,26 @@ import Contact from './components/Contact';
 function App() {
   const [categories] = useState(['about', 'portfolio', 'contact', 'resume']);
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  function renderComponent(currentCategory) {
+    switch (currentCategory) {
+      case 'about':
+        return <About />;
+      case 'portfolio':
+        return <Project />;
+      case 'contact':
+        return <Contact />;
+      case 'resume':
+        return <About />; //Change this to return resume once added (or link to google doc)
+      default:
+        return <About />;
+    }
+  }
   return (
     <div className="App">
       <Header currentCategory={currentCategory} setCurrentCategory={setCurrentCategory} />
-      <About />
-      <Contact />
-      <Project />
+      <main>
+        {renderComponent(currentCategory)}
+      </main>
       <Footer />
     </div>
   );
