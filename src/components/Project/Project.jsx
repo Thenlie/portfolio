@@ -52,21 +52,26 @@ function Project() {
             img: "/assets/readme-gen.png",
             description: "A simple README file generator made during the U of U coding bootcamp.",
             repo: "https://github.com/Thenlie/readme-generator",
-            live: "",
+            live: "https://github.com/Thenlie/readme-generator",
         }
     ]
     return (
         <section>
-            <h1>Projects</h1>
-            <div>
-                {projectList.map((project) => (
-                    <div key={project.id}>
-                        <h3>{project.title}</h3>
-                        <p>{project.description}</p>
-                        <p><a href={project.repo}>{project.repo}</a></p>
-                        <img src={project.img} alt={`Screenshot of ${project.title}`} width='250' height='250'></img>
-                    </div>
-                ))}
+            <h1 className='text-center'>Projects</h1>
+            <div className='container'>
+                <div className='row'>
+                    {projectList.map((project) => (
+                        <div key={project.id} className='col-6 text-center p-2'>
+                            <div className='card m-2 p-2 h-100'>
+                                <h3>{project.title}</h3>
+                                <p>{project.description}</p>
+                                <p><a href={project.repo}>{project.repo}</a></p>
+                                <p><a href={project.live}>{project.live}</a></p>
+                                <img src={project.img} alt={`Screenshot of ${project.title}`} width='300' height='250' className='m-auto'></img>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     );

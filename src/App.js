@@ -25,7 +25,7 @@ function App() {
   }
   return (
     <div className="App min-vh-100 position-relative">
-      <div className='pb-5'>
+      <div className='content-wrap'>
         <Header currentCategory={currentCategory} setCurrentCategory={setCurrentCategory} />
         <main>
           {renderComponent(currentCategory)}

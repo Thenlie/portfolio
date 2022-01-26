@@ -1,21 +1,21 @@
 function Contact() {
     return (
         <section>
-            <h1>Contact</h1>
-            <form>
-                <div className='m-2'>
-                    <label htmlFor='name'>Name:</label>
-                    <input name='name' />
+            <h1 className='text-center'>Contact</h1>
+            <form className='m-auto p-2 d-flex flex-column'>
+                <div>
+                    <label className='p-1' htmlFor='name'>Name:</label>
+                    <input className='w-100' name='name' />
                 </div>
-                <div className='m-2'>
-                    <label htmlFor='email'>Email:</label>
-                    <input name='email' />
+                <div>
+                    <label className='p-1' htmlFor='email'>Email:</label>
+                    <input className='w-100' name='email' />
                 </div>
-                <div className='m-2'>
-                    <label htmlFor='message'>Message:</label>
-                    <input name='message' />
+                <div>
+                    <label className='p-1' htmlFor='message'>Message:</label>
+                    <textarea className='w-100' name='message' rows='3'/>
                 </div>
-                <button type='submit'>Submit</button>
+                <button className='m-2' type='submit'>Submit</button>
             </form>
         </section>
     );
