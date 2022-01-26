@@ -24,11 +24,13 @@ function App() {
     }
   }
   return (
-    <div className="App">
-      <Header currentCategory={currentCategory} setCurrentCategory={setCurrentCategory} />
-      <main>
-        {renderComponent(currentCategory)}
-      </main>
+    <div className="App min-vh-100 position-relative">
+      <div className='pb-5'>
+        <Header currentCategory={currentCategory} setCurrentCategory={setCurrentCategory} />
+        <main>
+          {renderComponent(currentCategory)}
+        </main>
+      </div>
       <Footer />
     </div>
   );

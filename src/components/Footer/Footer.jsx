@@ -2,7 +2,7 @@
 
 function Footer() {
     return (
-        <footer className='fixed-bottom'>
+        <footer className='position-absolute bottom-0 w-100'>
             <ul className='d-flex list-group-horizontal justify-content-center'>
                 <li className={'m-1 list-group-item'}><a href='https://github.com/Thenlie/'>GitHub</a></li>
                 <li className={'m-1 list-group-item'}><a href='https://www.linkedin.com/in/leithen-crider-55a294b7/'>LinkedIn</a></li>
