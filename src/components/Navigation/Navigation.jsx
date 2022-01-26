@@ -1,5 +1,3 @@
-// import React from 'react';
-
 function Navigation(props) {
     const {currentCategory, setCurrentCategory} = props;
     return (
