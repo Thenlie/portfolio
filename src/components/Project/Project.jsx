@@ -62,14 +62,14 @@ function Project() {
                 <div className='row'>
                     {projectList.map((project) => (
                         <div key={project.id} className='col-6 text-center p-2'>
-                            <div className='card m-2 p-2 h-100 customCard'>
+                            <div className='card m-2 p-2 customCard'>
 
                                 <img src={project.img} alt={`Screenshot of ${project.title}`} width='300' height='250' className='m-auto cardImage' />
                                 <div className='cardInfo'>
                                     <h3>{project.title}</h3>
                                     <p>{project.description}</p>
-                                    <p><a href={project.repo}>{project.repo}</a></p>
-                                    <p><a href={project.live}>{project.live}</a></p>
+                                    <p><a href={project.repo} target='_blank' rel="noopener noreferrer">{project.repo}</a></p>
+                                    <p><a href={project.live} target='_blank' rel="noopener noreferrer">{project.live}</a></p>
                                 </div>
                             </div>
                         </div>

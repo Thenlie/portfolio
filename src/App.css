@@ -1,5 +1,13 @@
-footer {
-    height: 65px;
+:root {
+    --bg-color: #333333;
+    --light-color: #999999;
+    --lighter-color: #CCCCCC;
+    --lightest-color: #EEEEEE;
+}
+
+body {
+    background-color: var(--bg-color)!important;
+    color: black!important;
 }
 
 .content-wrap {
@@ -8,14 +16,16 @@ footer {
 
 .customCard {
     position: relative;
+    background-color: var(--light-color)!important;
 }
 
 .cardImage {
+    border-radius: 5px;
     opacity: 1;
     display: block;
     width: 100%;
     height: auto;
-    transition: .5s ease;
+    transition: .7s ease;
     backface-visibility: hidden;
 }
 
@@ -33,7 +43,11 @@ footer {
 .customCard:hover .cardImage {
     opacity: 0.3;
 }
-  
+
 .customCard:hover .cardInfo {
     opacity: 1;
+}
+
+footer {
+    height: 65px;
 }
