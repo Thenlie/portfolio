@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Project from './components/Project';
 import About from './components/About';
 import Contact from './components/Contact';
+import Resume from './components/Resume';
 
 function App() {
   const [categories] = useState(['about', 'portfolio', 'contact', 'resume']);
@@ -18,7 +19,7 @@ function App() {
       case 'contact':
         return <Contact />;
       case 'resume':
-        return <About />; //Change this to return resume once added (or link to google doc)
+        return <Resume />; 
       default:
         return <About />;
     }

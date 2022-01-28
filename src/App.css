@@ -14,6 +14,16 @@ header {
     height: 125px;
 }
 
+.list-group-item {
+    background-color: rgba(200, 200, 200, 0.75)!important;
+    border-radius: 10px!important;
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    box-shadow: inset 0 0 0 0.1em var(--bg-color);
+}
+
 .content-wrap {
     padding-bottom: 65px;
 }
@@ -50,6 +60,11 @@ header {
 
 .customCard:hover .cardInfo {
     opacity: 1;
+}
+
+.resumePDF {
+    height: 100vh;
+    width: 100vh;
 }
 
 footer {
