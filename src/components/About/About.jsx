@@ -11,7 +11,7 @@ function About() {
             <p className='m-4 aboutText'>
                 I was born in Columbus Ohio and raised in Milwaukee Wisconsin. I moved out to Utah a few years ago to be closer to the mountains so I can climb and hike more. I love being outdoors and rock climbing, paragliding, skiing and hiking. I have been working at a climbing company for the past for years at various positions, mostly in manufacturing. Recently I have been working in the warranty department fixing broken gear and doing general customer service work. Feel free to reach out to me with the contact information at the bottom of the page if you want to know more!
             </p>
-            <img src='/assets/selfie.jpg' width={250} height={250} className='rounded-circle mx-auto my-5 d-block' alt='Selfie'></img>
+            <img src='./assets/img/selfie.jpg' width={250} height={250} className='rounded-circle mx-auto my-5 d-block' alt='Selfie'></img>
         </section>
     );
 }
