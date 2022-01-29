@@ -1,10 +1,42 @@
+import React, { useState } from 'react';
+import { Document, Page } from 'react-pdf';
+import PDF from './resume.pdf';
+
 function Resume() {
-    return (
-        <div className='text-center'>
-            <p className='m-2'>You can also view and download my Resume on <a href='https://docs.google.com/document/d/1WIhRvkGBx_Na3KBbDt7rj2FpzR6Nu42luJl0uBDsOYw/edit?usp=sharing'>Google Drive</a>.</p>
-            <iframe title="Leithen's resume" src="https://docs.google.com/document/d/e/2PACX-1vTs4DxtY33grzdmA_Y2Tga3J1Q7iNoGj0I7qe9a-7wuDpByFSHLsGkxgQsiX14bhHUauVHPIfkesR4Y/pub?embedded=true" className='resumePDF'></iframe>
-        </div>
-    )
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+    setPageNumber(1);
+  }
+
+  function changePage(offset) {
+    setPageNumber(prevPageNumber => prevPageNumber + offset);
+  }
+
+  function previousPage() {changePage(-1)}
+  function nextPage() {changePage(1)}
+
+  return (
+    <>
+        <p className='my-2 text-center'>You can also view and download my resume on <a href='https://docs.google.com/document/d/1WIhRvkGBx_Na3KBbDt7rj2FpzR6Nu42luJl0uBDsOYw/edit?usp=sharing' target={"_blank"}>Google Drive</a>.</p>
+        <Document file={PDF} onLoadSuccess={onDocumentLoadSuccess}>
+            <Page pageNumber={pageNumber} />
+        </Document>
+        <div className='text-center mb-3'>
+            <p>
+                Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}
+            </p>
+            <button className='m-1 btn btn-secondary' type="button" disabled={pageNumber <= 1} onClick={previousPage}>
+                Previous
+            </button>
+            <button className='m-1 btn btn-secondary' type="button" disabled={pageNumber >= numPages} onClick={nextPage}>
+                Next
+            </button>
+      </div>
+    </>
+  );
 }
 
 export default Resume;

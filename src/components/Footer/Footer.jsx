@@ -3,7 +3,7 @@
 function Footer() {
     return (
         <footer className='position-absolute bottom-0 w-100 p-2'>
-            <ul className='d-flex list-group-horizontal justify-content-center'>
+            <ul className='d-flex list-group-horizontal justify-content-center p-0'>
                 <a href='https://github.com/Thenlie/' target='_blank' rel="noopener noreferrer">
                     <li className='m-1 list-group-item list-group-item-dark'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" className="bi bi-github" viewBox="0 0 16 16">
