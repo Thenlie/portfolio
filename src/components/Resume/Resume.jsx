@@ -20,7 +20,7 @@ function Resume() {
 
   return (
     <>
-        <p className='my-2 text-center'>You can also view and download my resume on <a href='https://docs.google.com/document/d/1WIhRvkGBx_Na3KBbDt7rj2FpzR6Nu42luJl0uBDsOYw/edit?usp=sharing' target={"_blank"}>Google Drive</a>.</p>
+        <p className='my-2 text-center'>You can also view and download my resume on <a href='https://docs.google.com/document/d/1WIhRvkGBx_Na3KBbDt7rj2FpzR6Nu42luJl0uBDsOYw/edit?usp=sharing' target={"_blank"} rel="noreferrer">Google Drive</a>.</p>
         <Document file={PDF} onLoadSuccess={onDocumentLoadSuccess}>
             <Page pageNumber={pageNumber} />
         </Document>
