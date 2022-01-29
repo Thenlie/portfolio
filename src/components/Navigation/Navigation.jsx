@@ -1,7 +1,7 @@
 function Navigation(props) {
     const {currentCategory, setCurrentCategory} = props;
     return (
-        <ul className='d-flex list-group-horizontal mb-0 h-50 mt-4'>
+        <ul className='d-flex list-group-horizontal h-50 mt-lg-4 mt-1 mx-auto mx-lg-0'>
             <li className={`m-1 list-group-item ${currentCategory === 'about' && 'text-primary'}`} onClick={() => setCurrentCategory('about')}>About Me</li>
             <li className={`m-1 list-group-item ${currentCategory === 'portfolio' && 'text-primary'}`} onClick={() => setCurrentCategory('portfolio')}>Portfolio</li>
             <li className={`m-1 list-group-item ${currentCategory === 'contact' && 'text-primary'}`} onClick={() => setCurrentCategory('contact')}>Contact</li>

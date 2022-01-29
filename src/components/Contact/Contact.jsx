@@ -1,7 +1,7 @@
 function Contact() {
     return (
         <section>
-            <h1 className='text-center'>Contact</h1>
+            <h1 className='text-center m-2'>Contact</h1>
             <form className='m-auto p-2 d-flex flex-column w-50'>
                 <div>
                     <label className='p-1' htmlFor='name'>Name:</label>

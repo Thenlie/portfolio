@@ -57,11 +57,11 @@ function Project() {
     ]
     return (
         <section>
-            <h1 className='text-center'>Projects</h1>
+            <h1 className='text-center m-2'>Projects</h1>
             <div className='container'>
                 <div className='row'>
                     {projectList.map((project) => (
-                        <div key={project.id} className='col-6 text-center p-2'>
+                        <div key={project.id} className='col-12 col-lg-6 text-center p-2'>
                             <div className='card m-2 p-2 customCard'>
 
                                 <img src={project.img} alt={`Screenshot of ${project.title}`} width='300' height='250' className='m-auto cardImage' />
