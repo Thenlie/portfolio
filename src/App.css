@@ -66,6 +66,7 @@ main h1 {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     width: 95%;
+    height: 95%;
     color: black;
 }
 
