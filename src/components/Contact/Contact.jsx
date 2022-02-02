@@ -55,7 +55,7 @@ function Contact() {
 
     return (
         <section>
-            <h1 className='text-center m-2'>Contact</h1>
+            <h1 className='text-center m-2'>Send me an email!</h1>
             <form className='m-auto p-2 d-flex flex-column w-50' ref={form} onSubmit={sendEmail}>
                 <div>
                     <label className='p-1' htmlFor='user_name'>Name:</label>
