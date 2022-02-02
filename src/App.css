@@ -219,3 +219,7 @@ footer {
     bottom: 0;
     transition: all 0.45s;
 }
+
+.icon-logo:hover {
+    fill: var(--lightest-color);
+}
