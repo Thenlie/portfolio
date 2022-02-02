@@ -1,62 +1,81 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
+    const form = useRef();
     const [errorMessage, setErrorMessage] = useState('');
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-    const { name, email, message } = formState;
+    const [emailError, setEmailError] = useState('');
+    const [formState, setFormState] = useState({ user_name: '', user_email: '', message: '' });
+    const re = /\S+@\S+\.\S+/;
 
     function validateEmail(email) {
-        var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(String(email).toLowerCase());
-    }
+        return re.test(String(email).toLowerCase())
+    };
 
-    function handleChange(evt) {
-        if (evt.target.name === 'email') {
-            const isValid = validateEmail(evt.target.value);
-            if (!isValid) {
-                setErrorMessage('Your email is invalid!');
+    function clearError() {
+        setEmailError('');
+    };
+
+    function updateForm(evt) {
+        evt.preventDefault();
+        if (evt.target.name === 'user_email') {
+            if (!validateEmail(evt.target.value.trim())) {
+                setEmailError('Invalid email!');
+                setFormState({...formState, user_email: null});
             } else {
-                setErrorMessage('');
+                setEmailError('');
+                setFormState({...formState, user_email: evt.target.value});
             }
         } else {
-            if (!evt.target.value.length) {
-                setErrorMessage(`${evt.target.name} is required!`);
-            } else {
-                setErrorMessage('');
-            }
-        }
-        if (!errorMessage) {
             setFormState({...formState, [evt.target.name]: evt.target.value});
         }
     }
 
-    function handleSubmit(evt) {
-        evt.preventDefault();
-        console.log(formState);
-    }
+    const sendEmail = (e) => {
+        e.preventDefault();
+        
+        if (!formState.user_name || !formState.message) {
+            setErrorMessage('All fields must be filled out!');
+            setTimeout(() => setErrorMessage(''), 3000);
+            return;
+        } else if (!formState.user_email) {
+            setErrorMessage('Email must be valid!');
+            setTimeout(() => setErrorMessage(''), 3000);
+            return;
+        }
+
+        emailjs.sendForm('service_x13vu2u', 'contact_form', form.current, 'user_hpWDafSMgABPbGLjcRlHt')
+        .then((result) => {
+            console.log(result.text);
+            document.location.reload();
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
 
     return (
         <section>
             <h1 className='text-center m-2'>Contact</h1>
-            <form className='m-auto p-2 d-flex flex-column w-50' onSubmit={handleSubmit}>
+            <form className='m-auto p-2 d-flex flex-column w-50' ref={form} onSubmit={sendEmail}>
                 <div>
-                    <label className='p-1' htmlFor='Name'>Name:</label>
-                    <input className='w-100' name='Name' defaultValue={name} onBlur={handleChange}/>
+                    <label className='p-1' htmlFor='user_name'>Name:</label>
+                    <input className='w-100' name='user_name' defaultValue={formState.user_name}  onChange={updateForm}/>
                 </div>
                 <div>
-                    <label className='p-1' htmlFor='email'>Email:</label>
-                    <input className='w-100' name='email' defaultValue={email} onBlur={handleChange}/>
+                    <label className='p-1' htmlFor='user_email'>Email:</label>
+                    <input className='w-100' name='user_email' defaultValue={formState.user_email} onChange={updateForm} onBlur={clearError}/>
                 </div>
+                {emailError && (
+                    <p className="text-danger text-center m-0 p-1">{emailError}</p>
+                )}
                 <div>
-                    <label className='p-1' htmlFor='Message'>Message:</label>
-                    <textarea className='w-100' name='Message' rows='3'defaultValue={message} onBlur={handleChange}/>
+                    <label className='p-1' htmlFor='message'>Message:</label>
+                    <textarea className='w-100' name='message' rows='3'defaultValue={formState.message}  onChange={updateForm}/>
                 </div>
                 {errorMessage && (
-                    <div>
-                        <p className="error-text">{errorMessage}</p>
-                    </div>
+                    <p className="text-danger text-center m-0 p-1">{errorMessage}</p>
                 )}
-                <button className='m-2' type='submit'>Submit</button>
+                <button className='m-2 btn btn-secondary' type='submit'>Submit</button>
             </form>
         </section>
     );
