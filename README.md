@@ -6,11 +6,12 @@
 
 My professional web development portfolio. Started during the U of U coding bootcamp. Featuring some of my favorite projects, this portfolio was made from scratch using React. 
 
-### Packages used
+### Tecnologies used
 
-* [Create React App](https://create-react-app.dev/)
+* [React](https://reactjs.org/)
 * [Bootstrap](https://getbootstrap.com/)
 * [React PDF](https://react-pdf.org/)
+* [Email JS](https://emailjs.com/)
 
 
 ## Screenshot of the Application
