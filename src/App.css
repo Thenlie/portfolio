@@ -12,6 +12,7 @@ html {
 body {
     background-color: var(--bg-color)!important;
     color: var(--lightest-color)!important;
+    font-family: 'Courier New', monospace!important; 
 }
 
 header {
@@ -20,10 +21,12 @@ header {
 
 header h1 {
     color: black;
+    font-weight:600;
 }
 
 main h1 {
     color: var(--light-color)!important;
+    font-weight:600;
 }
 
 
@@ -185,6 +188,7 @@ footer {
 
 .nav-btn {
     background: var(--bg-color);
+    opacity: 0.8;
     color: var(--light-color);
     border: 1px solid var(--light-color);
     border-radius: 10px;
