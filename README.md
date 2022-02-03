@@ -12,6 +12,7 @@ My professional web development portfolio. Started during the U of U coding boot
 * [Bootstrap](https://getbootstrap.com/)
 * [React PDF](https://react-pdf.org/)
 * [Email JS](https://emailjs.com/)
+* [Avataaars](https://github.com/fangpenlin/avataaars)
 
 
 ## Screenshot of the Application

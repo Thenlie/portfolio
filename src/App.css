@@ -15,6 +15,10 @@ body {
     font-family: 'Courier New', monospace!important; 
 }
 
+.avatar {
+    width: fit-content;
+}
+
 header {
     height: fit-content;
 }
@@ -41,7 +45,7 @@ main h1 {
 }
 
 .content-wrap {
-    padding-bottom: 65px;
+    padding-bottom: 80px;
 }
 
 .customCard {
@@ -100,8 +104,7 @@ main h1 {
 }
 
 footer {
-    height: 70px;
-    margin-bottom: 10px;
+    height: 80px;
 }
 
 .wrapper {
