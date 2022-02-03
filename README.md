@@ -1,8 +1,6 @@
 # Leithen's Web Development Portfolio ![Badge for License](https://img.shields.io/badge/license-MIT-blue?style=plastic) ![Badge for Skillset](https://img.shields.io/badge/Skillset-Full%20Stack%20Dev-blue?style=plastic)
 
-<div align="center">
-    <a href="https://thenlie.github.io/portfolio/">View my portfolio!</a>
-</div>
+<h2 align="center"><a href="https://thenlie.github.io/portfolio/">View my portfolio!</a></h2>
 
 ## Description  
 
