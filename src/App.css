@@ -191,6 +191,13 @@ footer {
     color: #ffffff;
 }
 
+.wrapper .email:hover,
+.wrapper .email:hover .tooltip,
+.wrapper .email:hover .tooltip::before {
+    background-color: #00b33c;
+    color: #ffffff;
+}
+
 .nav-btn {
     background: rgba(40, 40, 40, 0.8);
     color: white;
