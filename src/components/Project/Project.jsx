@@ -2,6 +2,15 @@ function Project() {
     const projectList = [
         {
             id: 0,
+            title: "Type++",
+            tech: "MERN, Chart.js",
+            img: "./assets/typeplusplus.png",
+            description: "An online typing game where you can test you typing speed and compare it with others!",
+            repo: "https://github.com/Thenlie/type-plus-plus",
+            live: "https://typeplusplus.herokuapp.com/",
+        },
+        {
+            id: 1,
             title: "Only Bands",
             tech: "Handlebars, Tailwind, MVC",
             img: "./assets/onlybands.png",
@@ -10,7 +19,7 @@ function Project() {
             live: "https://onlybands.herokuapp.com/",
         },
         {
-            id: 1,
+            id: 2,
             title: "Streamability",
             tech: "Handlebars, Express, MVC",
             img: "./assets/streamability.png",
@@ -19,7 +28,7 @@ function Project() {
             live: "https://streamability.herokuapp.com/",
         },
         {
-            id: 2,
+            id: 3,
             title: "Tech Blog",
             tech: "Handlebars, Express, MVC",
             img: "./assets/techblog.png",
@@ -28,7 +37,7 @@ function Project() {
             live: "https://safe-journey-60844.herokuapp.com/",
         },
         {
-            id: 3,
+            id: 4,
             title: "Password Generator",
             tech: "Handlebars, Express, MVC",
             img: "./assets/passwordgen.png",
@@ -37,7 +46,7 @@ function Project() {
             live: "https://thenlie.github.io/password-generator/",
         },
         {
-            id: 4,
+            id: 5,
             title: "Note Taker",
             tech: "Handlebars, Express, MVC",
             img: "./assets/notetaker.png",
@@ -45,15 +54,6 @@ function Project() {
             repo: "https://github.com/Thenlie/note-taker",
             live: "https://serene-ridge-39054.herokuapp.com/",
         },
-        {
-            id: 5,
-            title: "README Generator",
-            tech: "Handlebars, Express, MVC",
-            img: "./assets/readmegen.png",
-            description: "A simple README file generator made during the U of U coding bootcamp.",
-            repo: "https://github.com/Thenlie/readme-generator",
-            live: null,
-        }
     ]
     return (
         <section>
