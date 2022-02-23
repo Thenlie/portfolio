@@ -52,6 +52,7 @@ main h1 {
 .customCard {
     position: relative;
     background-color: var(--light-color)!important;
+    min-height: 225px;
 }
 
 .cardImage {
@@ -62,6 +63,7 @@ main h1 {
     height: auto;
     transition: .7s ease;
     backface-visibility: hidden;
+    min-height: 208px;
 }
 
 .cardInfo {
