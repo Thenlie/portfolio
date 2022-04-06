@@ -1,6 +1,8 @@
+import tieDye from '../../assets/tie-dye.jpg';
+
 function Footer() {
     return (
-        <footer className='position-absolute bottom-0 w-100 p-2 text-center' style={{backgroundImage: `url('./assets/tie-dye.jpg')`, backgroundSize: 'cover', backgroundPosition: 'bottom'}}>
+        <footer className='position-absolute bottom-0 w-100 p-2 text-center' style={{backgroundImage: `url(${tieDye})`, backgroundSize: 'cover', backgroundPosition: 'bottom'}}>
             <div className="wrapper">
                 <a href='https://www.linkedin.com/in/leithen-crider-55a294b7/' target='_blank' rel="noopener noreferrer">
                     <div className="icon linkedin">

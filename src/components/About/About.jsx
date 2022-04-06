@@ -3,7 +3,7 @@ import Avatar from "../Avatar";
 function About() {
     return (
         <section>
-            <h1 className='text-center m-2'>About</h1>
+            <h1 className='text-center m-2'>Hi, I'm Leithen 👋</h1>
             <Avatar />
             <p className='m-4 aboutText'>
                 Full Stack Web Developer with a background in manufacturing and customer service. Recognized as a fast learner, excellent problem solver and effective collaborator. Recent graduate of the University of Utah’s full stack coding bootcamp. 
