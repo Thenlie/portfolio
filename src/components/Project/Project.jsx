@@ -64,7 +64,7 @@ function Project() {
     ]
     return (
         <section>
-            <h1 className='text-center m-2'>Projects</h1>
+            <h1 className='text-center m-2'>Check out some of my work</h1>
             <div className='container'>
                 <div className='row'>
                     {projectList.map((project) => (
