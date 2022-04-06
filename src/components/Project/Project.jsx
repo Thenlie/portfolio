@@ -1,10 +1,17 @@
+import notetaker from '../../assets/notetaker.png';
+import onlybands from '../../assets/onlybands.png';
+import passwordgen from '../../assets/passwordgen.png';
+import streamability from '../../assets/streamability.png';
+import techblog from '../../assets/techblog.png';
+import typeplusplus from '../../assets/typeplusplus.png';
+
 function Project() {
     const projectList = [
         {
             id: 0,
             title: "Type++",
             tech: "MERN, Chart.js",
-            img: "./assets/typeplusplus.png",
+            img: typeplusplus,
             description: "An online typing game where you can test you typing speed and compare it with others!",
             repo: "https://github.com/Thenlie/type-plus-plus",
             live: "https://typeplusplus.herokuapp.com/",
@@ -13,7 +20,7 @@ function Project() {
             id: 1,
             title: "Only Bands",
             tech: "Handlebars, Tailwind, MVC",
-            img: "./assets/onlybands.png",
+            img: onlybands,
             description: "The site is a central hub for music info. You can search for an artist, save your favorite artists and albums and even track which concerts you have been to.",
             repo: "https://github.com/Thenlie/OnlyBands",
             live: "https://onlybands.herokuapp.com/",
@@ -22,7 +29,7 @@ function Project() {
             id: 2,
             title: "Streamability",
             tech: "Handlebars, Express, MVC",
-            img: "./assets/streamability.png",
+            img: streamability,
             description: "Streamability is a collaborative and responsive application made to display where an individual can stream their favorite TV shows and movies.",
             repo: "https://github.com/Thenlie/Streamability",
             live: "https://streamability.herokuapp.com/",
@@ -31,7 +38,7 @@ function Project() {
             id: 3,
             title: "Tech Blog",
             tech: "Handlebars, Express, MVC",
-            img: "./assets/techblog.png",
+            img: techblog,
             description: "A CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.",
             repo: "https://github.com/Thenlie/tech-blog",
             live: "https://safe-journey-60844.herokuapp.com/",
@@ -40,7 +47,7 @@ function Project() {
             id: 4,
             title: "Password Generator",
             tech: "Handlebars, Express, MVC",
-            img: "./assets/passwordgen.png",
+            img: passwordgen,
             description: "A simple password generator that takes user selected characters and randomizes them to create a unique password.",
             repo: "https://github.com/Thenlie/password-generator",
             live: "https://thenlie.github.io/password-generator/",
@@ -49,7 +56,7 @@ function Project() {
             id: 5,
             title: "Note Taker",
             tech: "Handlebars, Express, MVC",
-            img: "./assets/notetaker.png",
+            img: notetaker,
             description: "An application that can be used to write and save notes. This application was made using an express.js backend and gets note data from a JSON file.",
             repo: "https://github.com/Thenlie/note-taker",
             live: "https://serene-ridge-39054.herokuapp.com/",
