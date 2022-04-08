@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e9fec5e2.css",
-    "main.js": "/portfolio/static/js/main.57c7713d.js",
+    "main.css": "/portfolio/static/css/main.1a16f5db.css",
+    "main.js": "/portfolio/static/js/main.e588926c.js",
+    "static/media/onlybands.png": "/portfolio/static/media/onlybands.8486841e5b2e6fe96106.png",
+    "static/media/streamability.png": "/portfolio/static/media/streamability.a974b52c16ce2d6a949b.png",
+    "static/media/typeplusplus.png": "/portfolio/static/media/typeplusplus.df27e976639958b45d29.png",
     "static/media/tie-dye.jpg": "/portfolio/static/media/tie-dye.b728b775bce44e4cd708.jpg",
-    "static/media/resume.pdf": "/portfolio/static/media/resume.99a2f2afa52f6cfb634b.pdf",
+    "static/media/techblog.png": "/portfolio/static/media/techblog.1173eb26c4d2af18f548.png",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.e6222cf567bfa59dbeae.pdf",
+    "static/media/passwordgen.png": "/portfolio/static/media/passwordgen.c60a79d69209b2cca4f6.png",
+    "static/media/notetaker.png": "/portfolio/static/media/notetaker.17d7de0c37cc38f7a52e.png",
     "index.html": "/portfolio/index.html",
-    "main.e9fec5e2.css.map": "/portfolio/static/css/main.e9fec5e2.css.map",
-    "main.57c7713d.js.map": "/portfolio/static/js/main.57c7713d.js.map"
+    "main.1a16f5db.css.map": "/portfolio/static/css/main.1a16f5db.css.map",
+    "main.e588926c.js.map": "/portfolio/static/js/main.e588926c.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9fec5e2.css",
-    "static/js/main.57c7713d.js"
+    "static/css/main.1a16f5db.css",
+    "static/js/main.e588926c.js"
   ]
 }
